@@ -460,16 +460,6 @@ require('lazy').setup({
     end,
   },
 
-  -- Toggleterm for vscode-esque terminal
-  {
-    'akinsho/toggleterm.nvim',
-    version = '*',
-    opts = {
-      open_mapping = [[<c-\>]],
-    },
-    config = true,
-  },
-
   -- LSP Plugins
   {
     -- `lazydev` configures Lua LSP for your Neovim config, runtime and plugins
@@ -970,17 +960,6 @@ require('lazy').setup({
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
-      textobjects = {
-        lsp_interop = {
-          enable = true,
-          border = 'none',
-          floating_preview_opts = {},
-          peek_definition_code = {
-            ['<leader>df'] = '@function.outer',
-            ['<leader>dF'] = '@class.outer',
-          },
-        },
-      },
       highlight = { enable = true },
       indent = { enable = true, disable = { 'python' } },
     },
